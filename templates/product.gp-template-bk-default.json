@@ -68,15 +68,6 @@
       "type": "gp-section-578721304975246209"
     },
     "gp_shopify_original_section_578730352055419777": {
-      "block_order": [
-        "gp_app_globo-product-options-variant_grpiCQgZGj"
-      ],
-      "blocks": {
-        "gp_app_globo-product-options-variant_grpiCQgZGj": {
-          "settings": {},
-          "type": "shopify://apps/globo-product-option/blocks/app-block/fdc9fad5-1a0f-4bd4-9c8a-1af6a6eef6b8"
-        }
-      },
       "settings": {
         "checksum": ""
       },
