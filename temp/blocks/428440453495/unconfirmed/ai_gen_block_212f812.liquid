@@ -1,6 +1,729 @@
+{% doc %}
+  @prompt
+    Create a product section that allows the customer to select two different variants (e.g. shades or flavors) from the same product and add them together to the cart in one click.
+    
+    🟢 Core Features:
+    
+    • Title above the selectors: “Válaszd ki az első árnyalatot” and “Válaszd ki a második árnyalatot”
+    • Under each title, show all available product variants (pulled dynamically from this product) as clickable color swatches
+    • Both selections must be required before the “Kosárba” button becomes active
+    • When the customer clicks “Kosárba”, both selected variants must be added to the cart together as two separate line items
+    
+    🟢 Variant Handling:
+    
+    • Use Shopify product variants from this product to populate the swatch selectors
+    • Customer must be able to choose two distinct variants
+    • Swatches should highlight selection state (active border or checkmark)
+    
+    🟢 Add-on Upsell Section (Optional):
+    
+    • Below the variant selectors, add 2–3 optional add-on products (e.g. lip scrub, top gloss)
+    • Each add-on displayed as a small card:
+      – Product image
+      – Title + short description
+      – Discounted price
+      – Checkbox input to add to cart
+    • Selected add-ons should also be added as separate line items to the cart when “Kosárba” is clicked
+    
+    🟢 Cart Behavior:
+    
+    • When the button is clicked, redirect to the `/cart` page immediately
+    • Ensure all selected variants and optional add-ons are passed to the cart as separate items
+    • No AJAX cart, no page refresh needed
+    
+    🟢 Design:
+    
+    • Use a 2-column layout: product image on the left, selectors + add-ons on the right
+    • Mobile view: stack all sections vertically
+    • Highlight the “Kosárba” button (full width, lavender or purple, uppercase)
+    • Show original price and discounted bundle price
+    • All texts in **Hungarian**
+    
+    🟢 Placement:
+    
+    • This setup replaces the traditional variant selector on the product page
+    • Must be compatible with product metafields or Shopify's native variant structure
+
+{% enddoc %}
+{% assign ai_gen_id = block.id | replace: '_', '' | downcase %}
+
+{% style %}
+  .ai-dual-variant-selector-{{ ai_gen_id }} {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    padding: 20px;
+    background-color: {{ block.settings.background_color }};
+    border-radius: {{ block.settings.border_radius }}px;
+  }
+
+  .ai-dual-variant-image-{{ ai_gen_id }} {
+    position: relative;
+  }
+
+  .ai-dual-variant-image-{{ ai_gen_id }} img {
+    width: 100%;
+    height: auto;
+    border-radius: {{ block.settings.image_border_radius }}px;
+  }
+
+  .ai-dual-variant-image-placeholder-{{ ai_gen_id }} {
+    width: 100%;
+    aspect-ratio: 1;
+    background-color: #f4f4f4;
+    border-radius: {{ block.settings.image_border_radius }}px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .ai-dual-variant-image-placeholder-{{ ai_gen_id }} svg {
+    width: 60%;
+    height: 60%;
+    opacity: 0.5;
+  }
+
+  .ai-dual-variant-content-{{ ai_gen_id }} {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+  }
+
+  .ai-dual-variant-pricing-{{ ai_gen_id }} {
+    margin-bottom: 16px;
+  }
+
+  .ai-dual-variant-original-price-{{ ai_gen_id }} {
+    font-size: 18px;
+    color: #999;
+    text-decoration: line-through;
+    margin-right: 8px;
+  }
+
+  .ai-dual-variant-bundle-price-{{ ai_gen_id }} {
+    font-size: 24px;
+    font-weight: bold;
+    color: {{ block.settings.price_color }};
+  }
+
+  .ai-dual-variant-selector-section-{{ ai_gen_id }} {
+    margin-bottom: 20px;
+  }
+
+  .ai-dual-variant-selector-title-{{ ai_gen_id }} {
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 12px;
+    color: {{ block.settings.text_color }};
+  }
+
+  .ai-dual-variant-swatches-{{ ai_gen_id }} {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+  }
+
+  .ai-dual-variant-swatch-{{ ai_gen_id }} {
+    width: 40px;
+    height: 40px;
+    border: 2px solid transparent;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+  }
+
+  .ai-dual-variant-swatch-{{ ai_gen_id }}:hover {
+    transform: scale(1.1);
+  }
+
+  .ai-dual-variant-swatch-{{ ai_gen_id }}.selected {
+    border-color: {{ block.settings.swatch_selected_color }};
+    box-shadow: 0 0 0 2px rgba(128, 60, 238, 0.3);
+  }
+
+  .ai-dual-variant-swatch-{{ ai_gen_id }}::after {
+    content: '✓';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 14px;
+    font-weight: bold;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+  }
+
+  .ai-dual-variant-swatch-{{ ai_gen_id }}.selected::after {
+    opacity: 1;
+  }
+
+  .ai-dual-variant-addons-{{ ai_gen_id }} {
+    border-top: 1px solid #e0e0e0;
+    padding-top: 20px;
+  }
+
+  .ai-dual-variant-addons-title-{{ ai_gen_id }} {
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 16px;
+    color: {{ block.settings.text_color }};
+  }
+
+  .ai-dual-variant-addon-card-{{ ai_gen_id }} {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 12px;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    margin-bottom: 12px;
+    transition: border-color 0.3s ease;
+  }
+
+  .ai-dual-variant-addon-card-{{ ai_gen_id }}:hover {
+    border-color: {{ block.settings.swatch_selected_color }};
+  }
+
+  .ai-dual-variant-addon-checkbox-{{ ai_gen_id }} {
+    width: 18px;
+    height: 18px;
+    accent-color: {{ block.settings.swatch_selected_color }};
+  }
+
+  .ai-dual-variant-addon-image-{{ ai_gen_id }} {
+    width: 50px;
+    height: 50px;
+    border-radius: 4px;
+    object-fit: cover;
+  }
+
+  .ai-dual-variant-addon-image-placeholder-{{ ai_gen_id }} {
+    width: 50px;
+    height: 50px;
+    background-color: #f4f4f4;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .ai-dual-variant-addon-image-placeholder-{{ ai_gen_id }} svg {
+    width: 30px;
+    height: 30px;
+    opacity: 0.5;
+  }
+
+  .ai-dual-variant-addon-info-{{ ai_gen_id }} {
+    flex-grow: 1;
+  }
+
+  .ai-dual-variant-addon-title-{{ ai_gen_id }} {
+    font-size: 14px;
+    font-weight: 600;
+    margin-bottom: 4px;
+    color: {{ block.settings.text_color }};
+  }
+
+  .ai-dual-variant-addon-description-{{ ai_gen_id }} {
+    font-size: 12px;
+    color: #666;
+    margin-bottom: 4px;
+  }
+
+  .ai-dual-variant-addon-price-{{ ai_gen_id }} {
+    font-size: 14px;
+    font-weight: 600;
+    color: {{ block.settings.price_color }};
+  }
+
+  .ai-dual-variant-cart-button-{{ ai_gen_id }} {
+    width: 100%;
+    padding: 16px;
+    background-color: {{ block.settings.button_color }};
+    color: {{ block.settings.button_text_color }};
+    border: none;
+    border-radius: {{ block.settings.button_border_radius }}px;
+    font-size: 16px;
+    font-weight: 600;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    opacity: 0.5;
+    pointer-events: none;
+  }
+
+  .ai-dual-variant-cart-button-{{ ai_gen_id }}.active {
+    opacity: 1;
+    pointer-events: auto;
+  }
+
+  .ai-dual-variant-cart-button-{{ ai_gen_id }}.active:hover {
+    background-color: {{ block.settings.button_hover_color }};
+    transform: translateY(-2px);
+  }
+
+  @media screen and (max-width: 768px) {
+    .ai-dual-variant-selector-{{ ai_gen_id }} {
+      grid-template-columns: 1fr;
+      gap: 20px;
+    }
+
+    .ai-dual-variant-swatches-{{ ai_gen_id }} {
+      justify-content: center;
+    }
+  }
+{% endstyle %}
+
+<dual-variant-selector-{{ ai_gen_id }}
+  class="ai-dual-variant-selector-{{ ai_gen_id }}"
+  data-product-id="{{ product.id }}"
+  {{ block.shopify_attributes }}
+>
+  <div class="ai-dual-variant-image-{{ ai_gen_id }}">
+    {% if product.featured_image %}
+      <img
+        src="{{ product.featured_image | image_url: width: 600 }}"
+        alt="{{ product.featured_image.alt | escape }}"
+        loading="lazy"
+        width="{{ product.featured_image.width }}"
+        height="{{ product.featured_image.height }}"
+      >
+    {% else %}
+      <div class="ai-dual-variant-image-placeholder-{{ ai_gen_id }}">
+        {{ 'product-1' | placeholder_svg_tag }}
+      </div>
+    {% endif %}
+  </div>
+
+  <div class="ai-dual-variant-content-{{ ai_gen_id }}">
+    {% if product.variants.size > 1 %}
+      <div class="ai-dual-variant-pricing-{{ ai_gen_id }}">
+        {% assign original_price = product.price | times: 2 %}
+        {% assign bundle_discount = block.settings.bundle_discount | divided_by: 100.0 %}
+        {% assign bundle_price = original_price | times: bundle_discount %}
+        <span class="ai-dual-variant-original-price-{{ ai_gen_id }}">{{ original_price | money }}</span>
+        <span class="ai-dual-variant-bundle-price-{{ ai_gen_id }}">{{ bundle_price | money }}</span>
+      </div>
+
+      <div class="ai-dual-variant-selector-section-{{ ai_gen_id }}">
+        <h3 class="ai-dual-variant-selector-title-{{ ai_gen_id }}">{{ block.settings.first_selector_title }}</h3>
+        <div class="ai-dual-variant-swatches-{{ ai_gen_id }}" data-selector="first">
+          {% for variant in product.variants %}
+            {% if variant.available %}
+              <div
+                class="ai-dual-variant-swatch-{{ ai_gen_id }}"
+                data-variant-id="{{ variant.id }}"
+                data-variant-title="{{ variant.title | escape }}"
+                style="background-color: {{ variant.metafields.custom.color | default: '#' | append: variant.title | handle | remove: '-' | slice: 0, 6 }};"
+                title="{{ variant.title }}"
+              ></div>
+            {% endif %}
+          {% endfor %}
+        </div>
+      </div><div class="ai-dual-variant-selector-section-{{ ai_gen_id }}">
+        <h3 class="ai-dual-variant-selector-title-{{ ai_gen_id }}">{{ block.settings.second_selector_title }}</h3>
+        <div class="ai-dual-variant-swatches-{{ ai_gen_id }}" data-selector="second">
+          {% for variant in product.variants %}
+            {% if variant.available %}
+              <div
+                class="ai-dual-variant-swatch-{{ ai_gen_id }}"
+                data-variant-id="{{ variant.id }}"
+                data-variant-title="{{ variant.title | escape }}"
+                style="background-color: {{ variant.metafields.custom.color | default: '#' | append: variant.title | handle | remove: '-' | slice: 0, 6 }};"
+                title="{{ variant.title }}"
+              ></div>
+            {% endif %}
+          {% endfor %}
+        </div>
+      </div>
+
+      {% if block.settings.show_addons %}
+        <div class="ai-dual-variant-addons-{{ ai_gen_id }}">
+          <h3 class="ai-dual-variant-addons-title-{{ ai_gen_id }}">{{ block.settings.addons_title }}</h3>
+          
+          {% for i in (1..3) %}
+            {% assign addon_product_key = 'addon_product_' | append: i %}
+            {% assign addon_description_key = 'addon_description_' | append: i %}
+            {% assign addon_discount_key = 'addon_discount_' | append: i %}
+            {% assign addon_product = block.settings[addon_product_key] %}
+            {% assign addon_description = block.settings[addon_description_key] %}
+            {% assign addon_discount = block.settings[addon_discount_key] %}
+            
+            {% if addon_product != blank %}
+              {% assign discounted_price = addon_product.price | times: addon_discount | divided_by: 100.0 %}
+              
+              <label class="ai-dual-variant-addon-card-{{ ai_gen_id }}">
+                <input
+                  type="checkbox"
+                  class="ai-dual-variant-addon-checkbox-{{ ai_gen_id }}"
+                  data-addon-variant-id="{{ addon_product.selected_or_first_available_variant.id }}"
+                  data-addon-price="{{ discounted_price }}"
+                >
+                {% if addon_product.featured_image %}
+                  <img
+                    src="{{ addon_product.featured_image | image_url: width: 100 }}"
+                    alt="{{ addon_product.featured_image.alt | escape }}"
+                    class="ai-dual-variant-addon-image-{{ ai_gen_id }}"
+                    loading="lazy"
+                  >
+                {% else %}
+                  <div class="ai-dual-variant-addon-image-placeholder-{{ ai_gen_id }}">
+                    {{ 'product-1' | placeholder_svg_tag }}
+                  </div>
+                {% endif %}
+                
+                <div class="ai-dual-variant-addon-info-{{ ai_gen_id }}">
+                  <div class="ai-dual-variant-addon-title-{{ ai_gen_id }}">{{ addon_product.title }}</div>
+                  {% if addon_description != blank %}
+                    <div class="ai-dual-variant-addon-description-{{ ai_gen_id }}">{{ addon_description }}</div>
+                  {% endif %}
+                  <div class="ai-dual-variant-addon-price-{{ ai_gen_id }}">{{ discounted_price | money }}</div>
+                </div>
+              </label>
+            {% endif %}
+          {% endfor %}
+        </div>
+      {% endif %}
+
+      <form action="/cart/add" method="post" enctype="multipart/form-data" class="ai-dual-variant-form-{{ ai_gen_id }}">
+        <button
+          type="submit"
+          class="ai-dual-variant-cart-button-{{ ai_gen_id }}"
+          disabled>
+          {{ block.settings.cart_button_text }}
+        </button>
+      </form>
+    {% else %}
+      <div style="text-align: center; padding: 40px; color: #666;">
+        <p>Ez a termék nem rendelkezik több változattal a kettős kiválasztáshoz.</p>
+      </div>
+    {% endif %}
+  </div>
+</dual-variant-selector-{{ ai_gen_id }}>
+
+<script>
+  (function() {
+    class DualVariantSelector{{ ai_gen_id }} extends HTMLElement {
+      constructor() {
+        super();
+        this.selectedVariants = {
+          first: null,
+          second: null
+        };
+        this.selectedAddons = [];}
+
+      connectedCallback() {
+        this.setupEventListeners();
+      }
+
+      setupEventListeners() {
+        const swatchContainers = this.querySelectorAll('.ai-dual-variant-swatches-{{ ai_gen_id }}');
+        const cartButton = this.querySelector('.ai-dual-variant-cart-button-{{ ai_gen_id }}');
+        const form = this.querySelector('.ai-dual-variant-form-{{ ai_gen_id }}');
+        const addonCheckboxes = this.querySelectorAll('.ai-dual-variant-addon-checkbox-{{ ai_gen_id }}');
+
+        swatchContainers.forEach(container => {
+          const selectorType = container.dataset.selector;
+          const swatches = container.querySelectorAll('.ai-dual-variant-swatch-{{ ai_gen_id }}');
+
+          swatches.forEach(swatch => {
+            swatch.addEventListener('click', () => {
+              container.querySelectorAll('.ai-dual-variant-swatch-{{ ai_gen_id }}').forEach(s => {
+                s.classList.remove('selected');
+              });
+              
+              swatch.classList.add('selected');
+              this.selectedVariants[selectorType] = swatch.dataset.variantId;
+              this.updateCartButton();
+            });
+          });
+        });
+
+        addonCheckboxes.forEach(checkbox => {
+          checkbox.addEventListener('change', () => {
+            this.updateSelectedAddons();
+          });
+        });
+
+        form.addEventListener('submit', (e) => {
+          e.preventDefault();
+          this.addToCart();
+        });
+      }
+
+      updateSelectedAddons() {
+        const checkboxes = this.querySelectorAll('.ai-dual-variant-addon-checkbox-{{ ai_gen_id }}:checked');
+        this.selectedAddons = Array.from(checkboxes).map(checkbox => ({
+          variantId: checkbox.dataset.addonVariantId,
+          price: checkbox.dataset.addonPrice
+        }));
+      }
+
+      updateCartButton() {
+        const cartButton = this.querySelector('.ai-dual-variant-cart-button-{{ ai_gen_id }}');
+        const bothSelected = this.selectedVariants.first && this.selectedVariants.second;
+        const differentVariants = this.selectedVariants.first !== this.selectedVariants.second;
+
+        if (bothSelected && differentVariants) {
+          cartButton.classList.add('active');
+          cartButton.disabled = false;
+        } else {
+          cartButton.classList.remove('active');
+          cartButton.disabled = true;
+        }
+      }
+
+      async addToCart() {
+        const items = [];
+
+        items.push({
+          id: this.selectedVariants.first,
+          quantity: 1
+        });
+
+        items.push({
+          id: this.selectedVariants.second,
+          quantity: 1
+        });
+
+        this.selectedAddons.forEach(addon => {
+          items.push({
+            id: addon.variantId,
+            quantity: 1
+          });
+        });
+
+        try {
+          const response = await fetch('/cart/add.js', {
+            method: 'POST',
+            headers: {
+              'Content-Type': 'application/json',
+            },
+            body: JSON.stringify({ items })
+          });
+
+          if (response.ok) {
+            window.location.href = '/cart';
+          } else {
+            console.error('Error adding to cart');
+          }
+        } catch (error) {
+          console.error('Error:', error);
+        }
+      }
+    }
+
+    customElements.define('dual-variant-selector-{{ ai_gen_id }}', DualVariantSelector{{ ai_gen_id }});
+  })();
+</script>
+
 {% schema %}
- {
-   "name": "AI_Block",
-   "tag": "shopify-ai-generated-block"
- }
+{
+  "name": "Dual variant selector",
+  "tag": null,
+  "settings": [
+    {
+      "type": "header",
+      "content": "Selector titles"
+    },
+    {
+      "type": "text",
+      "id": "first_selector_title",
+      "label": "First selector title",
+      "default": "Válaszd ki az első árnyalatot"
+    },
+    {
+      "type": "text",
+      "id": "second_selector_title",
+      "label": "Second selector title",
+      "default": "Válaszd ki a második árnyalatot"
+    },
+    {
+      "type": "text",
+      "id": "cart_button_text",
+      "label": "Cart button text",
+      "default": "Kosárba"
+    },
+    {
+      "type": "header",
+      "content": "Bundle pricing"
+    },
+    {
+      "type": "range",
+      "id": "bundle_discount",
+      "min": 50,
+      "max": 100,
+      "step": 5,
+      "unit": "%",
+      "label": "Bundle price percentage",
+      "default": 85
+    },
+    {
+      "type": "header",
+      "content": "Add-ons"
+    },
+    {
+      "type": "checkbox",
+      "id": "show_addons",
+      "label": "Show add-on products",
+      "default": true
+    },
+    {
+      "type": "text",
+      "id": "addons_title",
+      "label": "Add-ons section title",
+      "default": "Kiegészítő termékek"
+    },
+    {
+      "type": "product",
+      "id": "addon_product_1",
+      "label": "Add-on product 1"
+    },
+    {
+      "type": "text",
+      "id": "addon_description_1",
+      "label": "Add-on 1 description",
+      "default": "Ajak radír a tökéletes előkészítéshez"
+    },
+    {
+      "type": "range",
+      "id": "addon_discount_1",
+      "min": 50,
+      "max": 100,
+      "step": 5,
+      "unit": "%",
+      "label": "Add-on 1 discount percentage",
+      "default": 80
+    },
+    {
+      "type": "product",
+      "id": "addon_product_2",
+      "label": "Add-on product 2"
+    },
+    {
+      "type": "text",
+      "id": "addon_description_2",
+      "label": "Add-on 2 description",
+      "default": "Fényes top coat a hosszantartó hatásért"
+    },
+    {
+      "type": "range",
+      "id": "addon_discount_2",
+      "min": 50,
+      "max": 100,
+      "step": 5,
+      "unit": "%",
+      "label": "Add-on 2 discount percentage",
+      "default": 80
+    },
+    {
+      "type": "product",
+      "id": "addon_product_3",
+      "label": "Add-on product 3"
+    },
+    {
+      "type": "text",
+      "id": "addon_description_3",
+      "label": "Add-on 3 description",
+      "default": "Hidratáló ajakbalzsam az ápolásért"
+    },
+    {
+      "type": "range",
+      "id": "addon_discount_3",
+      "min": 50,
+      "max": 100,
+      "step": 5,
+      "unit": "%",
+      "label": "Add-on 3 discount percentage",
+      "default": 80
+    },
+    {
+      "type": "header",
+      "content": "Colors"
+    },
+    {
+      "type": "color",
+      "id": "background_color",
+      "label": "Background color",
+      "default": "#ffffff"
+    },
+    {
+      "type": "color",
+      "id": "text_color",
+      "label": "Text color",
+      "default": "#000000"
+    },
+    {
+      "type": "color",
+      "id": "price_color",
+      "label": "Price color",
+      "default": "#803cee"
+    },
+    {
+      "type": "color",
+      "id": "swatch_selected_color",
+      "label": "Selected swatch border color",
+      "default": "#803cee"
+    },
+    {
+      "type": "color",
+      "id": "button_color",
+      "label": "Button background color",
+      "default": "#803cee"
+    },
+    {
+      "type": "color",
+      "id": "button_text_color",
+      "label": "Button text color",
+      "default": "#ffffff"
+    },
+    {
+      "type": "color",
+      "id": "button_hover_color",
+      "label": "Button hover color",
+      "default": "#6b2bc7"
+    },
+    {
+      "type": "header",
+      "content": "Style"
+    },
+    {
+      "type": "range",
+      "id": "border_radius",
+      "min": 0,
+      "max": 30,
+      "step": 2,
+      "unit": "px",
+      "label": "Container border radius",
+      "default": 12
+    },
+    {
+      "type": "range",
+      "id": "image_border_radius",
+      "min": 0,
+      "max": 30,
+      "step": 2,
+      "unit": "px",
+      "label": "Image border radius",
+      "default": 8
+    },
+    {
+      "type": "range",
+      "id": "button_border_radius",
+      "min": 0,
+      "max": 30,
+      "step": 2,
+      "unit": "px",
+      "label": "Button border radius",
+      "default": 8
+    }
+  ],
+  "presets": [
+    {
+      "name": "Dual variant selector"
+    }
+  ]
+}
 {% endschema %}
