@@ -10,59 +10,59 @@
 {
   "sections": {
     "gp_shopify_original_section_584679231800214388": {
+      "type": "gp-section-584679231800214388",
       "settings": {
-        "checksum": "",
-        "section_preload": "true"
-      },
-      "type": "gp-section-584679231800214388"
+        "section_preload": "true",
+        "checksum": ""
+      }
     },
     "gp_shopify_original_section_584679231851332165": {
+      "type": "gp-section-584679231851332165",
       "settings": {
         "checksum": ""
-      },
-      "type": "gp-section-584679231851332165"
+      }
     },
     "gp_shopify_original_section_584679334208340746": {
+      "type": "gp-section-584679334208340746",
       "settings": {
         "checksum": ""
-      },
-      "type": "gp-section-584679334208340746"
+      }
     },
     "gp_shopify_original_section_584679412507607818": {
+      "type": "gp-section-584679412507607818",
       "settings": {
         "checksum": ""
-      },
-      "type": "gp-section-584679412507607818"
+      }
     },
     "gp_shopify_original_section_584679412524384856": {
+      "type": "gp-section-584679412524384856",
       "settings": {
         "checksum": ""
-      },
-      "type": "gp-section-584679412524384856"
+      }
     },
     "gp_shopify_original_section_584679449501368901": {
+      "type": "gp-section-584679449501368901",
       "settings": {
         "checksum": ""
-      },
-      "type": "gp-section-584679449501368901"
+      }
     },
     "gp_shopify_original_section_584679449501369098": {
+      "type": "gp-section-584679449501369098",
       "settings": {
         "checksum": ""
-      },
-      "type": "gp-section-584679449501369098"
+      }
     },
     "gp_shopify_original_section_584679449501369204": {
+      "type": "gp-section-584679449501369204",
       "settings": {
         "checksum": ""
-      },
-      "type": "gp-section-584679449501369204"
+      }
     },
     "gp_shopify_original_section_584679449518146136": {
+      "type": "gp-section-584679449518146136",
       "settings": {
         "checksum": ""
-      },
-      "type": "gp-section-584679449518146136"
+      }
     }
   },
   "order": [
