@@ -17,50 +17,57 @@
         "item_ERDKVF": {
           "type": "item",
           "settings": {
-            "title": "Protejează și mașina de spălat? (Și alte aparate?)",
-            "content": "<p><br/><em>Deși Filterbaby este conceput special pentru duș, apa filtrată ajută la reducerea calcarului în TOATE aparatele casei!<br/><br/></em><strong>Reducere ~60% a depunerilor</strong> <em>TOATE aparatele</em><br/><br/></p>"
+            "title": "Milyen összetevőket tartalmaz?",
+            "content": "<p><strong>EverLux Lip Masque (4 ml):</strong><br/><br/>Aqua (víz), Pentylene Glycol, Butylene Glycol, Mica, Algin, Glycerin, Indigofera Tinctoria Leaf Extract, 1,2-Hexandiol, Caprylyl Glycol, Hydroxyethyl Acrylate/Sodium Acryloyldimethyl Taurate Copolymer, Squalane, Caprylic/Capric Glucoside, Aroma, Polysorbate 80, Tin Oxide, Tejsav, Glükóz.<br/><br/></p>"
           }
         },
         "item_mryNUe": {
           "type": "item",
           "settings": {
-            "title": "Se potrivește capul de duș filtratAquafiltr Pro la dușul meu existent?",
-            "content": "<p>Da, capul de duș filtrat Aquafiltr Pro are un filtru integrat și este proiectat să fie compatibil cu majoritatea furtunurilor de duș și fitingurilor standard.</p>"
+            "title": "Hogyan kell használni?",
+            "content": "<ol><li>Vidd fel az EverLux Lip Stain Masque-ot, és hagyd hatni 10–30 másodpercig.</li><li>Töröld le egy nedves törlőkendővel vagy zsebkendővel.<br/></li></ol><p><strong>Peel & Reveal</strong></p><ol><li>Vidd fel 2–3 rétegben az EverLux Lip Masque-ot, amíg az ajkak teljesen fedettek lesznek (a kékes-lilás árnyalat NEM a végső szín).<br/><br/>Diszkrét hatás: 10–15 másodperc<br/>Intenzív szín: 30–45 másodperc<br/></li><li>Permetezd rá az EverLux Lip Activator-t (1–3 fújás). Enyhe bizsergést érezhetsz.<br/></li><li>Várj néhány másodpercet, majd a szájzugból indulva húzd le a maszkot, hogy előtűnjön az alatta lévő szín.</li></ol>"
           }
         },
         "item_BCipb9": {
           "type": "item",
           "settings": {
-            "title": "Cât de ușor este de instalat?",
-            "content": "<p>Este super ușor – o poți face singur, nu ai nevoie de instalator. Tot ce îți trebuie sunt 3 pași simpli:</p><ol><li>Demontați capul de duș original.</li><li>Înșurubați filtrul de duș Filterbaby Pro Series.</li><li>Înșurubați capul de duș original pe filtrul de duș Filterbaby Pro Series.</li></ol>"
+            "title": "Mennyi a termék szavatossági ideje?",
+            "content": "<p>Felbontástól számítva <strong>12 hónap</strong>.</p>"
           }
         },
         "item_mpdeCH": {
           "type": "item",
           "settings": {
-            "title": "Ce rezultate mă pot aștepta de la utilizarea capului de duș filtrat Aquafiltr Pro?",
-            "content": "<p><br/>Vă puteți aștepta la îmbunătățiri semnificative ale pielii și părului, inclusiv reducerea erupțiilor cutanate, roșeții și iritațiilor; o piele mai moale, mai hidratată și un păr mai sănătos și mai strălucitor. Ajută pielea uscată, eczematoasă, predispusă la acnee și rozacee, și îmbunătățește sănătatea respiratorie prin eliminarea vaporilor de clor.<br/><br/></p>"
+            "title": "Hány használatra elég egy tubus?",
+            "content": "<p>Egy <strong>4 ml-es EverLux Lip Masque</strong> kb. <strong>45–60 alkalomra</strong> elegendő.</p>"
           }
         },
         "item_xEXGaz": {
           "type": "item",
           "settings": {
-            "title": "Ce impurități elimină filtrul?",
-            "content": "<p><br/>Aquafiltr Pro elimină până la 99% din clor, cloramină și plumb. De asemenea, reduce metalele grele și alte substanțe chimice dăunătoare.<br/><br/><br/></p>"
+            "title": "Hogyan lehet a legjobban eltávolítani?",
+            "content": "<p>Az olajbázisú sminklemosóval is könnyen eltávolítható.</p>"
           }
         },
         "item_9EGRmH": {
           "type": "item",
           "settings": {
-            "title": "Înmuierează apa capul de duș filtrat?",
-            "content": "<p><br/>Aquafiltr Pro elimină până la 99% din clor, cloramină și plumb. De asemenea, reduce metalele grele și alte substanțe chimice dăunătoare.<br/><br/><br/></p>"
+            "title": "Használható szájfénnyel vagy ajakbalzsammal?",
+            "content": "<p>Igen, nyugodtan kenhetsz rá szájfényt vagy ajakbalzsamot, ez <strong>nem befolyásolja a tartósságát</strong>.</p>"
           }
         },
         "item_aKre3P": {
           "type": "item",
           "settings": {
-            "title": "Când schimb filtrul?",
-            "content": "<p><br/>Majoritatea filtrelor de duș trebuie schimbate la fiecare 3 luni sau după filtrarea a aproximativ 10.000 de litri de apă.<br/><br/></p>"
+            "title": "Vegán és állatkísérlet-mentes?",
+            "content": "<p><strong>Teljes mértékben!</strong> Az EverLux 100% vegán, a benne található szkvalán pedig növényi eredetű.</p>"
+          }
+        },
+        "item_BQKdFY": {
+          "type": "item",
+          "settings": {
+            "title": "Biztonságos terhesség alatt?",
+            "content": "<p>Igen, klinikailag tesztelt és <strong>biztonságosnak tekintett a várandósság idején</strong> is. Ugyanakkor javasoljuk, hogy az összetevők listáját mutasd meg az orvosodnak.</p>"
           }
         }
       },
@@ -71,18 +78,19 @@
         "item_mpdeCH",
         "item_xEXGaz",
         "item_9EGRmH",
-        "item_aKre3P"
+        "item_aKre3P",
+        "item_BQKdFY"
       ],
       "settings": {
         "full_width": false,
         "subheading": "",
-        "title": "Intrebari frecvente",
+        "title": "Gyakori kérdések",
         "content": "",
         "team_avatar_width": 160,
-        "support_hours": "Serviciul nostru de asistență pentru clienți este disponibil de luni până vineri, între orele 8:00 și 20:30.",
-        "answer_time": "Timp mediu de răspuns: 1 ore",
+        "support_hours": "Ügyfélszolgálatunk hétfőtől péntekig 8:00 és 20:30 között elérhető.",
+        "answer_time": "Átlagos válaszidő: 5–10 perc.",
         "button_text": "Telefon",
-        "button_url": "tel:0741787327",
+        "button_url": "tel:+36 20 452 3022",
         "text_position": "start",
         "background": "#ffffff",
         "background_gradient": "",
@@ -95,36 +103,70 @@
         "accordion_text_color": ""
       }
     },
-    "newsletter_iXt4DQ": {
-      "type": "newsletter",
-      "settings": {
-        "full_width": true,
-        "show_icon": false,
-        "title": "Nu rata nicio oportunitate!",
-        "content": "<p>Abonează-te acum și primești 10% reducere la prima comandă!</p>",
-        "button_text": "VREAU ACCES EXCLUSIV",
-        "subtext": "",
-        "background": "#ffffff",
-        "background_gradient": "",
-        "text_color": "",
-        "button_background": "",
-        "button_text_color": ""
-      }
-    },
-    "footer": {
-      "type": "footer",
+    "1758283711e1962bd5": {
+      "type": "_blocks",
       "blocks": {
-        "links": {
-          "type": "links",
+        "ai_gen_block_0af03cf_Npy3eB": {
+          "type": "ai_gen_block_0af03cf",
           "settings": {
-            "menu": "",
-            "show_menu_title": true
-          }
+            "newsletter_heading": "Iratkozz fel hírlevelünkre",
+            "newsletter_subheading": "Fedezd fel legújabb ajánlatainkat a postaládádban",
+            "email_placeholder": "Add meg az e-mail címed",
+            "brand_heading": "",
+            "brand_link_1_text": "",
+            "brand_link_1_url": "",
+            "brand_link_2_text": "",
+            "brand_link_2_url": "",
+            "support_heading": "Ügyfélszolgálat",
+            "support_link_1_text": "GYIK",
+            "support_link_1_url": "",
+            "support_link_2_text": "Kapcsolat",
+            "support_link_2_url": "",
+            "support_link_3_text": "info@laxo.hu",
+            "support_link_3_url": "mailto:info@laxo.hu",
+            "social_instagram": "",
+            "social_pinterest": "",
+            "social_youtube": "",
+            "social_facebook": "",
+            "products_heading": "Vásárolható termékeink",
+            "products_link_1_text": "Általános szerződési feltételek",
+            "products_link_1_url": "https://laxo.hu/pages/altalanos-szerzodesi-feltetelek",
+            "products_link_2_text": "Adatvédelmi szabályzat, tájékoztató",
+            "products_link_2_url": "shopify://policies/privacy-policy",
+            "products_link_3_text": "",
+            "products_link_3_url": "",
+            "logo": "shopify://shop_images/laxo_1.png",
+            "site_credit": "ConviFly.hu",
+            "copyright_text": "Minden jog fenntartva.",
+            "background_color": "#f8f9fa",
+            "text_color": "#1a1a1a",
+            "heading_color": "#1a1a1a",
+            "link_color": "#666666",
+            "link_hover_color": "#1a1a1a",
+            "border_color": "#e5e5e5",
+            "input_background": "#ffffff",
+            "button_color": "#1a1a1a",
+            "button_text_color": "#ffffff",
+            "button_hover_color": "#333333",
+            "social_background": "#e5e5e5",
+            "social_color": "#666666",
+            "social_hover_background": "#1a1a1a",
+            "heading_size": 18,
+            "text_size": 14,
+            "padding_top": 60,
+            "padding_bottom": 30
+          },
+          "blocks": {}
         }
       },
       "block_order": [
-        "links"
+        "ai_gen_block_0af03cf_Npy3eB"
       ],
+      "settings": {}
+    },
+    "footer": {
+      "type": "footer",
+      "disabled": true,
       "settings": {
         "show_social_media": true,
         "show_payment_icons": true,
@@ -137,7 +179,7 @@
   },
   "order": [
     "faq_8HCUTz",
-    "newsletter_iXt4DQ",
+    "1758283711e1962bd5",
     "footer"
   ]
 }

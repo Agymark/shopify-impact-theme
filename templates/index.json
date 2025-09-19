@@ -69,14 +69,14 @@
         "subheading_beh4zU": {
           "type": "subheading",
           "settings": {
-            "text": "Revoluționează-ți experiența la duș!"
+            "text": "Forradalmasítsd a rúzshasználat élményét!"
           }
         },
         "heading_XjtBfc": {
           "type": "heading",
           "settings": {
-            "text": "CALITATE SUPERIOARĂ",
-            "heading_tag": "h1",
+            "text": "Egész napos tartósság",
+            "heading_tag": "h2",
             "text_color": "",
             "gradient": ""
           }
@@ -84,7 +84,7 @@
         "richtext_6y8XLR": {
           "type": "richtext",
           "settings": {
-            "content": "<p>Bun venit la Filterbaby – unde fiecare picătură de apă înseamnă piele catifelată și păr strălucitor. Cu filtrele noastre inovatoare, aducem puritatea apei de izvor în casa ta.</p><p><strong>De ce să ne alegi?</strong><br/>✔ 99% eliminare clor și calcar<br/>✔ Instalare în 3 minute – fără expert<br/>✔ Peste 50.000 clienți mulțumiți</p>"
+            "content": "<p><br/>Szabadalmaztatott <strong>Liquid Blading</strong> technológiánk a pigmenteket az ajkak legfelső rétegébe juttatja, majd „lezárja”, így a szín órákon át nem fakul és nem adódik át.<br/><br/></p>"
           }
         }
       },
@@ -105,28 +105,21 @@
     "image-with-text-overlay": {
       "type": "image-with-text-overlay",
       "blocks": {
-        "1664424230c4756b0e-0": {
-          "type": "subheading",
-          "settings": {
-            "text": "Bun venit în lumea apei pure!"
-          }
-        },
         "1664424230c4756b0e-1": {
           "type": "heading",
           "settings": {
-            "text": "FILTRU DE DUȘ REVOLUȚIONAR",
+            "text": "Az ajakápolás új generációja.",
             "heading_tag": "h1"
           }
         },
         "1664424230c4756b0e-2": {
           "type": "richtext",
           "settings": {
-            "content": "<p>Aquafiltr Pro transformă apa robinetului într-un izvor de hidratare. Spune adio pielii uscate și părului lipsit de viață.</p>"
+            "content": "<p><strong>Miért marad így a helyén?</strong>A<strong>Liquid Blading</strong>technológia a pigmentet<strong>mikrovékony rétegként rögzíti</strong>az ajkak felső rétegéhez, és „lezárja”, ezért a szín<strong>nem adódik át, nem fakul</strong>, még evés-ivás után sem.<br/><strong>Eredmény:</strong>tetoválás-hatás<strong>tű és fájdalom nélkül</strong>– percek alatt.</p>"
           }
         }
       },
       "block_order": [
-        "1664424230c4756b0e-0",
         "1664424230c4756b0e-1",
         "1664424230c4756b0e-2"
       ],
@@ -149,8 +142,8 @@
           "type": "quote",
           "settings": {
             "logo_width": 100,
-            "author": "Ioan***",
-            "content": "Sincer să fiu, Filtrul chiar oprește impuritățile – se vede în cartuș după câteva săptămâni. Sunt mulțumit pe deplin.",
+            "author": "Júlia*",
+            "content": "Eleinte szkeptikus voltam, de tényleg kitart egész nap. Reggel felkenem, és este még mindig hibátlanul néz ki. Ráadásul egyáltalán nem szárítja ki az ajkaimat.",
             "show_rating": true,
             "rating": 5
           }
@@ -159,8 +152,8 @@
           "type": "quote",
           "settings": {
             "logo_width": 100,
-            "author": "Pop ***",
-            "content": "Nu credema că un simplu filtru poate face o așa diferență. Pielea nu mai e uscată după duș. O să mai cumpăr unul pentru părinți.",
+            "author": "Kata*",
+            "content": "Pontosan ezt kerestem! Nálam egy rúzs sem maradt meg eddig, de ez tényleg nem jön le. Egy esküvőn viseltem, és hajnalig tökéletesen tartott.",
             "show_rating": true,
             "rating": 5
           }
@@ -169,8 +162,8 @@
           "type": "quote",
           "settings": {
             "logo_width": 100,
-            "author": "Violeta ***",
-            "content": "Pentru mine, Folosesc Aquafiltr de 2 luni și se simte o mare diferență la duș. Îl voi recomanda și altora.",
+            "author": "Violett*",
+            "content": "Nagyon tetszenek a színek, egyszerre élénkek és természetesek. Az egyetlen apró hátrány, hogy pár percet várni kell, amíg megszárad, de megéri. Ajánlom!",
             "show_rating": true,
             "rating": 5
           }
