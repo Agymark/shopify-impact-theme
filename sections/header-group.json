@@ -17,14 +17,14 @@
         "message_wy9mhU": {
           "type": "message",
           "settings": {
-            "text": "Livrare gratuita peste 249 de lei",
+            "text": "Ingyenes szállítás 10.000Ft felett",
             "url": ""
           }
         },
         "message": {
           "type": "message",
           "settings": {
-            "text": "Peste 50.000 clienți mulțumiți",
+            "text": "Több mint  26.000+ elégedett ügyfél",
             "url": ""
           }
         },
@@ -56,7 +56,6 @@
       "settings": {
         "enable_sticky": true,
         "hide_on_scroll": false,
-        "logo": "shopify://shop_images/AQUAFILTRU.svg",
         "logo_max_width": 160,
         "logo_mobile_max_width": 170,
         "menu": "main-menu",
@@ -71,7 +70,6 @@
         "show_country_flag": false,
         "show_country_name": false,
         "transparent_header_text_color": "#ffffff",
-        "transparent_logo": "shopify://shop_images/AQUAFILTRU-1.svg",
         "reduce_padding": true,
         "background_opacity": 100,
         "background_blur_radius": 0
