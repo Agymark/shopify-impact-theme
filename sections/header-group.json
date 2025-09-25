@@ -58,7 +58,7 @@
         "hide_on_scroll": false,
         "logo": "shopify://shop_images/laxo_1_eefd5bab-5a97-4d73-8311-076b90bd6d03.png",
         "logo_max_width": 80,
-        "logo_mobile_max_width": 170,
+        "logo_mobile_max_width": 50,
         "menu": "main-menu",
         "sidebar_menu": "",
         "secondary_menu": "",
