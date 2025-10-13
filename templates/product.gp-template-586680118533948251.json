@@ -1,0 +1,241 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "gp_section_586680126603789085": {
+      "settings": {
+        "checksum": "9a77fc0121b0448fa13ba40a05f7a5b989cac6e46e65f1da2219185f87d4dffe_1_1_0_0__1",
+        "section_preload": "true"
+      },
+      "type": "gp-section-586680126603789085"
+    },
+    "gp_section_586680126771561163": {
+      "settings": {
+        "checksum": "7c4a7f1838a7dacec621b65bac6a1018f0058e934f560f0578718c47571d5b9e_1_1_0_0__1",
+        "ggEL8_Y5YX4_text": "<p>50+</p>",
+        "ggW00s0WeQ8_text": "<p>Products have<br>reached consumers</p>",
+        "ggYJ-jg6hI3_text": "<p>32.942+</p>",
+        "ggYuhDoOt7r_text": "<p>Feedback on instant<br>body relaxation</p>",
+        "ggnkI5bsmch_text": "<p>Satisfied customers and<br>five-star reviews</p>",
+        "ggp0yLgXQIo_text": "<p>Recommended by 50+<br>recovery experts</p>",
+        "gguH9KKmZmM_text": "<p>97.5%</p>",
+        "ggwFeznxquA_text": "<p>82%</p>"
+      },
+      "type": "gp-section-586680126771561163"
+    },
+    "gp_section_586680126805115587": {
+      "settings": {
+        "checksum": "4ef46931f09520394d13281e2a28abecb8bf7be836d8979c4d92c1124dc185dc_1_1_0_0__1",
+        "ggAULs7prOB_text": "<p>Blood Circulation And Relaxation Of The Body</p>",
+        "ggJlWI4gcln_text": "<p>By rapidly hitting the muscle fibers with a gentle wave,&nbsp;we are able to loosen up the tight knots in the area and reduce muscle soreness from the very first use.</p>",
+        "ggKSbNv1qy3_text": "<p>Beat Fatigue And Feel Great With The Gemgun Massage Gun</p>",
+        "gghJM6tXro8_text": "<p>Intensive Treatment To Relieve Pain And Fatigue</p>",
+        "ggoLWeuD0rl_text": "<p>Massage guns increase blood flow, which shuttles nutrients into the muscle while also removing blood that may have pooled&nbsp;in the muscles - bringing a feeling of relaxation, comfort.</p>"
+      },
+      "type": "gp-section-586680126805115587"
+    },
+    "gp_section_586680127039996619": {
+      "settings": {
+        "checksum": "4611605573e682a7fb4023e1317b3ef144d3cb551746a91f77c9d51439e0f4ae_1_1_0_0__1",
+        "ggMJce2dOLg_text": "<p>Used for relaxing and shaping each muscle part, helps soothe sore muscles that cause discomfort in the body.</p>",
+        "ggNQ9hyA8qu_text": "<p>U-Shape Head</p>",
+        "ggRE6qmM3wg_text": "<p>Flat Head</p>",
+        "ggj5Yll06vy_text": "<p>Suitable for the muscles around the shoulders, neck, spinal, and Achilles massage helps relieve muscle stiffness and soreness.</p>",
+        "ggot7P1CDD4_text": "<p>Used for deep tissue such as joint palm and plantar, helps reduce stiffness, improves flexibility &amp; boosts blood flow.</p>",
+        "ggqm-Jr4pgt_text": "<p>How Gemgun Massage Heads Work</p>",
+        "ggsIvFLN7JM_text": "<p>Taper Head</p>"
+      },
+      "type": "gp-section-586680127039996619"
+    },
+    "gp_section_586680127241323355": {
+      "settings": {
+        "checksum": "bd424aaf00bedf7b95a975360424fccfb4791fc826ce48c310a13e13442a57a4_1_1_0_0__1",
+        "ggGtMQVY3BF_dayLabel": "Days",
+        "ggGtMQVY3BF_hourLabel": "Hours",
+        "ggGtMQVY3BF_minuteLabel": "Mins",
+        "ggGtMQVY3BF_secondLabel": "Secs",
+        "ggGtMQVY3BF_weekLabel": "Weeks",
+        "ggLqyatTkld_label": "Get It Now",
+        "ggNrxx8K8KJ_text": "<p>Send Love To Your Family</p>",
+        "gglFI-rzwPg_text": "<p>When you order in</p>",
+        "ggwF-Xpr447_text": "<p>Guaranteed Delivery by Mother’s Day</p>"
+      },
+      "type": "gp-section-586680127241323355"
+    },
+    "gp_section_586680127274877725": {
+      "settings": {
+        "checksum": "ea7f8fa254efda0b40ff50059f7b6b4dd9bbef84664dfb1eb05a5087b4cebf71_1_1_0_0__1",
+        "gg0Y-CQlPGR_text": "<p>Email <span style=\"color:#EA3335;\">*</span></p>",
+        "gg1mWC1XtGY_text": "<p>Depending on your required result, we recommend using your Gemgun for a minimum of 30 seconds to a maximum of 3 minutes per muscle group.</p>",
+        "gg5SwCWwZWL_text": "<p>Still have questions? Send us your question by filling out the form below, we will be happy to assist you.</p>",
+        "gg6vbBKMrTj_placeholder": "Email",
+        "gg9_9xBy7ev_text": "<p>Depending on your required result, we recommend using your Gemgun for a minimum of 30 seconds to a maximum of 3 minutes per muscle group.</p>",
+        "ggPKe7Rxr57_childItem_0": "How long should I use my Gemgun?",
+        "ggPKe7Rxr57_childItem_1": "How does Gemgun work to massage and relax my body?",
+        "ggPKe7Rxr57_childItem_2": "Is it safe to use Gemgun during pregnancy?",
+        "ggPKe7Rxr57_childItem_3": "Does Gemgun come with a warranty?",
+        "ggPKe7Rxr57_childItem_4": "Can I make changes to my order?",
+        "ggPKe7Rxr57_childItem_5": "What is the time limit for returns?",
+        "ggPKe7Rxr57_childItem_6": "How do I return a gift?",
+        "ggU65AS5k4z_text": "<p>Depending on your required result, we recommend using your Gemgun for a minimum of 30 seconds to a maximum of 3 minutes per muscle group.</p>",
+        "ggV3D6GcrAX_text": "<p>Depending on your required result, we recommend using your Gemgun for a minimum of 30 seconds to a maximum of 3 minutes per muscle group.</p>",
+        "ggYur7kwK2P_label": "Submit Now",
+        "ggdP4bWdv-g_text": "<p>Depending on your required result, we recommend using your Gemgun for a minimum of 30 seconds to a maximum of 3 minutes per muscle group.</p>",
+        "ggfed4_SIYX_placeholder": "Leave your question here...",
+        "ggkbqepkm1O_text": "<p>Frequently Asked Questions</p>",
+        "ggpyW6W4m_y_text": "<p>Depending on your required result, we recommend using your Gemgun for a minimum of 30 seconds to a maximum of 3 minutes per muscle group.</p>",
+        "gguQZdjjVfu_text": "<p>Question <span style=\"color:#EA3335;\">*</span></p>",
+        "gguhkwnx6vN_text": "<p>Depending on your required result, we recommend using your Gemgun for a minimum of 30 seconds to a maximum of 3 minutes per muscle group.</p>"
+      },
+      "type": "gp-section-586680127274877725"
+    },
+    "gp_section_586680127442649803": {
+      "settings": {
+        "checksum": "9c8b6a206cfb53850564ab83d97c0b79b76cf210b0e083d1fa73d5f6ec279bf1_1_1_0_0__1",
+        "gg0gfgBWCOY_text": "<p>(224 reviews)</p>",
+        "gg1bXxWRcHx_label": "Buy Now",
+        "gg1bXxWRcHx_outOfStockLabel": "Out of stock",
+        "gg1bXxWRcHx_unavailableLabel": "Unavailable",
+        "gg1bXxWRcHx_variantSelectionRequiredMessage": "Please select a variant to add product to cart",
+        "ggE6dSWh265_label": "Buy Now",
+        "ggE6dSWh265_outOfStockLabel": "Out of stock",
+        "ggE6dSWh265_unavailableLabel": "Unavailable",
+        "ggE6dSWh265_variantSelectionRequiredMessage": "Please select a variant to add product to cart",
+        "ggFrfc5NHNY_label": "Buy Now",
+        "ggFrfc5NHNY_outOfStockLabel": "Out of stock",
+        "ggFrfc5NHNY_unavailableLabel": "Unavailable",
+        "ggFrfc5NHNY_variantSelectionRequiredMessage": "Please select a variant to add product to cart",
+        "ggOlUvZBums_text": "<p>Relieve Eye Pain and Improve Sleep</p>",
+        "ggSBmGH3oTd_text": "<p>Strengthen Your Health With&nbsp;<br>Our Massagers</p>",
+        "ggY7M9608Cs_text": "<p>Relieve Eye Pain and Improve Sleep</p>",
+        "ggdvx7EOaZa_text": "<p>(224 reviews)</p>",
+        "ggfTJ-agLJ__text": "<p>Relieve Eye Pain and Improve Sleep</p>",
+        "ggjxezy5IH__text": "<p>Only on Mother’s Day!</p>",
+        "ggtJsvwo5Dt_text": "<p>(224 reviews)</p>",
+        "gguI1ZzOln__text": "<p>Only on Mother’s Day!</p>",
+        "gguwX64sjKA_text": "<p>Only on Mother’s Day!</p>"
+      },
+      "type": "gp-section-586680127442649803"
+    },
+    "gp_section_586680127560090315": {
+      "settings": {
+        "checksum": "36d80f8d9d579069898381374490478e78b8a6205f5270aa6cb84c39d218ee47_1_1_0_0__1",
+        "gg87NxeLBLn_text": "<p>FAQs</p>",
+        "ggICYwhuT1T_text": "<p>Return &amp; Exchange&nbsp;</p>",
+        "ggTnsA965LU_placeholder": "Your Email",
+        "gg_o7hQErmo_text": "<p>Subscribe to our newsletter today and get exclusive offers every month.</p>",
+        "ggcV-1_aJm2_text": "<p>Contact Us</p>",
+        "ggdO37jqbLW_text": "<p>Delivery Information</p>",
+        "ggnmKH9pn6N_text": "<p>Services</p>",
+        "ggqkPR0u_fo_errorMessage": "Can’t send email. Please try again later.",
+        "ggqkPR0u_fo_successMessage": "Thanks for contacting us. We'll get back to you as soon as possible.",
+        "ggsuSWYO_d6_text": "<p>Newsletter</p>"
+      },
+      "type": "gp-section-586680127560090315"
+    },
+    "gp_section_586680127593644829": {
+      "settings": {
+        "checksum": "a5652733a084124b522abc65478c448dc521eeec98d48f877990e48276c16483_1_1_0_0__1",
+        "gg0OOPZ3Sfg_text": "<p>Muscle Activation &amp; Recovery</p>",
+        "ggFyQlITTD3_text": "<p>Lightweight &amp; Easy-To-Use</p>",
+        "ggHoCCbyuL6_text": "<p>Choose The Perfect Relaxing Gift To Pamper Your Family</p>",
+        "ggOdwLH8-MO_text": "<p>Promotes Circulation</p>",
+        "ggsIZr2TzOL_text": "<p>Post-Workout Recovery</p>",
+        "ggsPwh7WveW_text": "<p>Better Sleep &amp; Improved Mood</p>",
+        "ggzhlDt_9xW_text": "<p>Alleviate Aches &amp; Pain</p>"
+      },
+      "type": "gp-section-586680127593644829"
+    },
+    "gp_section_586680127627199171": {
+      "settings": {
+        "checksum": "1d9a32c8d987a5a57a6401854d7bec863a64f256ecd95c15f14a494f68a8a0b9_1_1_0_0__1",
+        "gg-DCX7iM0e_text": "<p>Használata biztonságos</p>",
+        "gg2RVK3wAOX_childItem_0": "Specifications",
+        "gg2RVK3wAOX_childItem_1": "What's in the box?",
+        "gg2RVK3wAOX_childItem_2": "How to use",
+        "ggOdOHfUnKp_text": "<p>60 people have bought this item<br>within the last hour!</p>",
+        "ggOt9jFybnp_text": "<p>(224 értékelés)</p>",
+        "ggPjkyrOB8n_viewLessText": "Show less",
+        "ggPjkyrOB8n_viewMoreText": "Show more",
+        "ggU8L_NAT9e_text": "A család összes tagjának tökéletes választás",
+        "ggUTNp5Sxv5_text": "<p><strong>Manufacturer</strong>: Gemgun<br><strong>Product Dimensions</strong>: 10.94 x 9.25 x 4.49 inches<br><strong>Adjustable speeds</strong>: 4 speed levels<br><strong>RPM</strong>: 3200 RPM&nbsp;<br><strong>Amplitude</strong>: 12mm&nbsp;<br><strong>Attachments/Massage Heads</strong>: 6 massage heads&nbsp;<br><strong>Noise/Sound Level</strong>: 40 (Quiet)&nbsp;<br><strong>Batteries</strong>: 3200mAh rechargeable lithium-ion battery&nbsp;<br><strong>Battery Life</strong>: Up to 12 hours</p>",
+        "ggYHsFCk_Ut_text": "<p>6 Massage heads&nbsp;</p>",
+        "gg_VzEroxvv_text": "<p>User manual book</p>",
+        "ggbIu-ap06__text": "<p>Gemgun Massage Gun</p>",
+        "ggbwFC25x0__displayContent": "Save {percent_discount}. Only on Mother's Day!",
+        "ggcCyZQ5JnB_text": "<p>12H+ work time</p>",
+        "ggenkxxC0UP_text": "<p>Power adapter</p>",
+        "ggfzq4tyQ5T_label": "Buy it now",
+        "gghP2JNcJN2_label": "Add to cart",
+        "gghP2JNcJN2_outOfStockLabel": "Out of stock",
+        "gghP2JNcJN2_unavailableLabel": "Unavailable",
+        "gghP2JNcJN2_variantSelectionRequiredMessage": "Please select a variant to add product to cart",
+        "gghgLVuN9w8_text": "<p>02-2400mAh batteries&nbsp;</p>",
+        "ggicATV4iov_text": "<p>Nylon carrying case</p>",
+        "ggihhxL37-R_text": "<p>4 Speed options</p>",
+        "ggmFKMWw0cm_text": "<p>Turn on the Gemgun without putting it on your body. That may seem like a minor thing, but it’s important for better control.&nbsp;<br>Rest the Gemgun on your body. Don’t add any pressure. Just let it float.<br>Glide the Gemgun along with the muscle. Move slowly - about an inch a second or slower.&nbsp;<br>If you hit a knot or an area of tension, let the Gemgun rest on that spot, without adding additional pressure for a few moments before moving on.&nbsp;<br>Breathe: nice long inhales and exhales. And feel the relief.</p>",
+        "ggrn8oAiF92_text": "<p>Only 7 left in stock!</p>",
+        "ggxPmbfKFUN_text": "<p>6 massage heads&nbsp;</p>",
+        "section_preload": "true"
+      },
+      "type": "gp-section-586680127627199171"
+    },
+    "gp_section_586680127643976539": {
+      "settings": {
+        "checksum": "9eb843188fbd71a96401da6c582b26cd11faa3040d77b07ea885c9d9ec002f62_1_1_0_0__1",
+        "gg24IIWOsuA_text": "<p>Perfect gift for my mom, she said that the pain had been reduced significantly after a few days of using GemGun. She also said that it is very useful after long jogging cause it helps to relax her muscles. Thanks!</p>",
+        "gg2bdW9lpci_text": "<p>Ned Jacobs</p>",
+        "gg4FJGRBfzX_text": "<p>230</p>",
+        "ggBvtwOTWih_text": "<p>0</p>",
+        "ggHXbYe9_Y4_text": "<p>Jan 13, 2022</p>",
+        "ggR8fVtQxlW_text": "<p>0</p>",
+        "ggSoRdq6yG9_text": "<p>0</p>",
+        "ggVqS-gDA_C_text": "<p>Let's Hear What Our Customers&nbsp;Have To Say</p>",
+        "ggZBbexHcoP_text": "<p>0</p>",
+        "ggZS8rcCCRg_text": "<p>0</p>",
+        "gg_jEQOuTn0_text": "<p>Regina Moore</p>",
+        "ggdPMUfJrUy_text": "<p>Feb 22, 2022</p>",
+        "ggeauooKMFp_text": "<p>Sabrina Miller</p>",
+        "ggucxBnqXdl_text": "<p>I’m a hairstylist, so I have a lot of issues with my arms and sometimes my sciatica. This massage gun has attachments that get right under the wing of the back of my shoulder where I need it to go. Love it! Love it!</p>",
+        "ggvja7sGF5X_text": "<p>Purchased this for Mother’s Day last year and my mom absolutely loves it. This has helped automatically with her shoulder pain, she instantly received relief. That’s why I’m back to get this for myself. Highly recommended!</p>",
+        "ggvoO2uN2VW_text": "<p>Mar 3, 2022</p>"
+      },
+      "type": "gp-section-586680127643976539"
+    },
+    "gp_section_586680127694308187": {
+      "settings": {
+        "checksum": "bbba62a606c660f6abe4898fe662d1c8aff04267a3de17bed15ed1d857316db2_1_1_0_0__1",
+        "ggG2wCbEjhX_text": "<p>2-Year Warranty Policy</p>",
+        "ggQfzpxOgm4_text": "<p>Free return if you don’t like the product.</p>",
+        "ggVvnQBdIeq_text": "<p>Free &amp; Secure Delivery</p>",
+        "ggaFNgATr6v_text": "<p>We fulfill all your orders as quickly as possible.</p>",
+        "ggaVkPUy1PS_text": "<p>Buy Now, Pay Later</p>",
+        "ggeSwkpgMQI_text": "<p>Make safe purchases with our Payment Policy.</p>",
+        "ggqgV19UKz1_text": "<p>Gain peace of mind with 24/7 support.</p>",
+        "ggxJBkATCms_text": "<p>60-Day Risk Free Trial</p>"
+      },
+      "type": "gp-section-586680127694308187"
+    }
+  },
+  "order": [
+    "gp_section_586680126603789085",
+    "gp_section_586680127627199171",
+    "gp_section_586680126771561163",
+    "gp_section_586680126805115587",
+    "gp_section_586680127593644829",
+    "gp_section_586680127039996619",
+    "gp_section_586680127643976539",
+    "gp_section_586680127241323355",
+    "gp_section_586680127694308187",
+    "gp_section_586680127442649803",
+    "gp_section_586680127274877725",
+    "gp_section_586680127560090315"
+  ]
+}
