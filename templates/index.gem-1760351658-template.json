@@ -15,8 +15,8 @@
         "slide-1": {
           "type": "image",
           "settings": {
-            "image": "shopify://shop_images/60b8e470-f148-4a14-9d1c-06303dd444ca.webp",
-            "mobile_image": "shopify://shop_images/NEW_Homepage_Mobile-_TOP_BANNER_copy_480x_0dddeb6a-a489-48d3-bb09-e4d01d98baff.webp",
+            "image": "shopify:\/\/shop_images\/60b8e470-f148-4a14-9d1c-06303dd444ca.webp",
+            "mobile_image": "shopify:\/\/shop_images\/NEW_Homepage_Mobile-_TOP_BANNER_copy_480x_0dddeb6a-a489-48d3-bb09-e4d01d98baff.webp",
             "content_max_width": 1200,
             "mobile_text_position": "place-self-center text-center",
             "desktop_text_position": "sm:place-self-center sm:text-center",
@@ -86,7 +86,7 @@
         "richtext_6y8XLR": {
           "type": "richtext",
           "settings": {
-            "content": "<p><br/>Szabadalmaztatott <strong>Liquid Blading</strong> technológiánk a pigmenteket az ajkak legfelső rétegébe juttatja, majd „lezárja”, így a szín órákon át nem fakul és nem adódik át.<br/><br/></p>"
+            "content": "<p><br\/>Szabadalmaztatott <strong>Liquid Blading<\/strong> technológiánk a pigmenteket az ajkak legfelső rétegébe juttatja, majd „lezárja”, így a szín órákon át nem fakul és nem adódik át.<br\/><br\/><\/p>"
           }
         }
       },
@@ -117,7 +117,7 @@
         "1664424230c4756b0e-2": {
           "type": "richtext",
           "settings": {
-            "content": "<p><strong>Miért marad így a helyén?</strong>A<strong>Liquid Blading</strong>technológia a pigmentet<strong>mikrovékony rétegként rögzíti</strong>az ajkak felső rétegéhez, és „lezárja”, ezért a szín<strong>nem adódik át, nem fakul</strong>, még evés-ivás után sem.<br/><strong>Eredmény:</strong>tetoválás-hatás<strong>tű és fájdalom nélkül</strong>– percek alatt.</p>"
+            "content": "<p><strong>Miért marad így a helyén?<\/strong>A<strong>Liquid Blading<\/strong>technológia a pigmentet<strong>mikrovékony rétegként rögzíti<\/strong>az ajkak felső rétegéhez, és „lezárja”, ezért a szín<strong>nem adódik át, nem fakul<\/strong>, még evés-ivás után sem.<br\/><strong>Eredmény:<\/strong>tetoválás-hatás<strong>tű és fájdalom nélkül<\/strong>– percek alatt.<\/p>"
           }
         }
       },
@@ -130,7 +130,7 @@
         "allow_transparent_header": false,
         "enable_parallax": false,
         "image_size": "md",
-        "image": "shopify://shop_images/beauty-natural-2-middle.jpg",
+        "image": "shopify:\/\/shop_images\/beauty-natural-2-middle.jpg",
         "mobile_text_position": "place-self-center text-center",
         "desktop_text_position": "sm:place-self-center sm:text-center",
         "text_color": "#ffffff",
