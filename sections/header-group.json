@@ -56,7 +56,7 @@
       "settings": {
         "enable_sticky": true,
         "hide_on_scroll": false,
-        "logo": "shopify://shop_images/laxo_1_eefd5bab-5a97-4d73-8311-076b90bd6d03.png",
+        "logo": "shopify://shop_images/LOGO1.png",
         "logo_max_width": 80,
         "logo_mobile_max_width": 70,
         "menu": "main-menu",
@@ -71,7 +71,6 @@
         "show_country_flag": false,
         "show_country_name": false,
         "transparent_header_text_color": "#ffffff",
-        "transparent_logo": "shopify://shop_images/laxo_21.png",
         "reduce_padding": true,
         "background_opacity": 100,
         "background_blur_radius": 0
