@@ -24,8 +24,9 @@
     "gp_shopify_original_section_584679231851332165": {
       "type": "gp-section-584679231851332165",
       "settings": {
+        "section_preload": "false",
         "checksum": "",
-        "gge2s4cGyN7_text": "NYÁR VÉGI AKCIÓ",
+        "gge2s4cGyN7_text": "ŐSZI AKCIÓ",
         "ggezaIRSDH__text": "Korlátozott promóció"
       }
     },
@@ -33,7 +34,7 @@
       "type": "gp-section-584679334208340746",
       "blocks": {
         "gp_app_globo-product-options-variant_gA2HvyyotL": {
-          "type": "shopify://apps/globo-product-options-variant/blocks/app-block/fdc9fad5-1a0f-4bd4-9c8a-1af6a6eef6b8",
+          "type": "shopify://apps/globo-product-options/blocks/app-block/fdc9fad5-1a0f-4bd4-9c8a-1af6a6eef6b8",
           "settings": {}
         }
       },
@@ -41,13 +42,14 @@
         "gp_app_globo-product-options-variant_gA2HvyyotL"
       ],
       "settings": {
+        "section_preload": "false",
         "checksum": "",
         "ggZViAUPIbp_text": "<p><strong>ÚJ:</strong> 🏆2025-ben díj gyöztese <i><strong>Lip stain</strong></i></p>",
         "ggIqEgonj01_text": "<p>Az EverLux erőfeszítés nélkül ad tökéletes, tiszta és tartós ajkakat!</p>",
         "ggwUHWynpNP_childItem_0": "<p><strong>12+ órás tartósság</strong> – nem kenődik, csókálló</p>",
         "ggwUHWynpNP_childItem_1": "<p><strong>Aloe Vera + E-vitamin</strong> – hidratáló formula, nem szárít</p>",
         "ggwUHWynpNP_childItem_2": "<p><strong>Lehúzható textúra</strong> – praktikus, játékos felvitel</p>",
-        "ggwUHWynpNP_childItem_3": "<p><strong>Nem fakul</strong> – &nbsp;Egész nap intenzív marad a szín</p>",
+        "ggwUHWynpNP_childItem_3": "<p><strong>Nem fakul</strong> –  Egész nap intenzív marad a szín</p>",
         "ggZn9-d2E6k_text": "<i><s>13.990Ft</s></i> 7999Ft",
         "gghwA4BSkVE_text": "1+1 AJÁNDÉK – Egyet fizetsz, kettőt kapsz!",
         "ggY50CqEN8O_text": "<p>Színárnyalat</p>",
@@ -64,35 +66,30 @@
     "gp_shopify_original_section_584679412507607818": {
       "type": "gp-section-584679412507607818",
       "settings": {
+        "section_preload": "false",
         "checksum": "",
         "gg1atz82-OG_text": "Egész napos tartósság – mint egy ajaktetoválás",
         "ggqQQ-nQ77a_text": "<p><strong>Ismerős?</strong> Két korty kávé, egy csók, egy maszk… és a rúzs már a bögrén, az arcon, a textilen van – nem az ajkadon. A kontúr elfolyik, a szín foltos, te pedig egész nap igazgatod. Mi megértjük – az ajkaid a legjobbat érdemlik.</p>",
         "gggfhv6Hg3d_text": "Wonder Blading úgy, ahogy szereted",
-        "ggESSDOhvkS_text": "<p>Az <strong>EverLux Stain</strong> egyetlen lépésben ad tökéletes, egész nap tartó kontúrt.</p><p><strong>Vidd fel, hagyd megszáradni, majd húzd le</strong> – a többi tiszta varázslat! Nincs maszatolódás, nincs lekopás, nincs újrakenés… csak hibátlanul kinéző ajkak, erőfeszítés nélkül.&nbsp;</p><p>&nbsp;</p>",
+        "ggESSDOhvkS_text": "<p>Az <strong>EverLux Stain</strong> egyetlen lépésben ad tökéletes, egész nap tartó kontúrt.</p><p><strong>Vidd fel, hagyd megszáradni, majd húzd le</strong> – a többi tiszta varázslat! Nincs maszatolódás, nincs lekopás, nincs újrakenés… csak hibátlanul kinéző ajkak, erőfeszítés nélkül. </p><p> </p>",
         "ggU6PIIV-KR_text": "<p><strong>Miért marad így a helyén?</strong><br>A <strong>Liquid Blading</strong> technológia a pigmentet <strong>mikrovékony rétegként rögzíti</strong> az ajkak felső rétegéhez, és „lezárja”, ezért a szín <strong>nem adódik át, nem fakul</strong>, még evés-ivás után sem.<br><strong>Eredmény:</strong> tetoválás-hatás <strong>tű és fájdalom nélkül</strong> – percek alatt.</p>"
       }
     },
     "gp_shopify_original_section_584679449501368901": {
       "type": "gp-section-584679449501368901",
       "settings": {
+        "section_preload": "false",
         "checksum": "",
         "ggz9oMNOpd__text": "<p>„Az egyetlen lip stain, ami reggeltől estig bírja. A kedvenc árnyalatom a <strong>Lovely</strong> – estére rákenem a Wonder Blading <strong>Top Gloss</strong>-t, és a szín új életre kel, intenzív és drámai lesz.”</p>",
         "ggnGS5LUaYa_text": "<p><strong>– Hiteles vásárló</strong></p>"
       }
     },
-    "gp_shopify_original_section_584679449501369098": {
-      "type": "gp-section-584679449501369098",
-      "settings": {
-        "checksum": "",
-        "gglZ2eAfOuq_text": "30 Napos kockázatmentes próba",
-        "ggb-NQhgcJp_text": "<p>Hiszünk abban, hogy az EverLux magabiztosságot ad! <strong>Próbáld ki 30 napig</strong>, érezd a különbséget.&nbsp;</p><p>Ha nem vagy elégedett, <strong>kérdés nélkül visszafizetjük az árát.</strong> Lépj magabiztosan a szépségbe!</p>"
-      }
-    },
     "gp_shopify_original_section_584679449501369204": {
       "type": "gp-section-584679449501369204",
       "settings": {
+        "section_preload": "false",
         "checksum": "",
-        "ggJ2aw3JSeS_text": "Valódi felhasználói&nbsp;<br>élmények",
+        "ggJ2aw3JSeS_text": "Valódi felhasználói <br>élmények",
         "ggcS-vqnEm9_text": "<p>Már az első használatnál teltebbnek és határozottabbnak tűntek az ajkaim</p>",
         "ggYc8EeKg85_text": "<p>Imádtam, hogy nem adódik át és fixen marad</p>",
         "ggrqWD8cq4X_text": "<p>Az ajkaim puhák maradtak, egyáltalán nem szárította</p>",
@@ -100,9 +97,19 @@
         "ggf3zSAdVsg_rightImageLabel": "Utána"
       }
     },
+    "gp_shopify_original_section_584679449501369098": {
+      "type": "gp-section-584679449501369098",
+      "settings": {
+        "section_preload": "false",
+        "checksum": "",
+        "gglZ2eAfOuq_text": "30 Napos kockázatmentes próba",
+        "ggb-NQhgcJp_text": "<p>Hiszünk abban, hogy az EverLux magabiztosságot ad! <strong>Próbáld ki 30 napig</strong>, érezd a különbséget. </p><p>Ha nem vagy elégedett, <strong>kérdés nélkül visszafizetjük az árát.</strong> Lépj magabiztosan a szépségbe!</p>"
+      }
+    },
     "gp_shopify_original_section_584679449518146136": {
       "type": "gp-section-584679449518146136",
       "settings": {
+        "section_preload": "false",
         "checksum": ""
       }
     }
