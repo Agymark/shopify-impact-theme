@@ -1,0 +1,200 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "slideshow": {
+      "type": "slideshow",
+      "blocks": {
+        "slide-1": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/60b8e470-f148-4a14-9d1c-06303dd444ca.webp",
+            "mobile_image": "shopify:\/\/shop_images\/NEW_Homepage_Mobile-_TOP_BANNER_copy_480x_0dddeb6a-a489-48d3-bb09-e4d01d98baff.webp",
+            "content_max_width": 1200,
+            "mobile_text_position": "place-self-center text-center",
+            "desktop_text_position": "sm:place-self-center sm:text-center",
+            "subheading": "",
+            "title": "",
+            "heading_tag": "h0",
+            "button_text": "",
+            "button_link": "",
+            "text_color": "#ffffff",
+            "button_background": "#ffffff",
+            "button_text_color": "#000000",
+            "overlay_color": "#000000",
+            "overlay_opacity": 30,
+            "background": "",
+            "background_gradient": ""
+          }
+        }
+      },
+      "block_order": [
+        "slide-1"
+      ],
+      "settings": {
+        "full_width": true,
+        "allow_transparent_header": true,
+        "image_size": "auto",
+        "controls_type": "numbers",
+        "transition_type": "fade_with_text",
+        "autoplay": true,
+        "cycle_speed": 6,
+        "background": "#f2f2f2",
+        "background_gradient": "linear-gradient(60deg, rgba(60, 65, 68, 1), rgba(23, 29, 33, 1) 98%)"
+      }
+    },
+    "scrolling-text": {
+      "type": "scrolling-text",
+      "settings": {
+        "full_width": true,
+        "text": "Aloe vera + E-vitamin – Hidratáló formula",
+        "text_size": "xsmall",
+        "text_style": "fill",
+        "scrolling_mode": "auto",
+        "scrolling_speed": 20,
+        "background": "",
+        "background_gradient": "",
+        "text_color": "",
+        "text_gradient": ""
+      }
+    },
+    "rich_text_xFGCyf": {
+      "type": "rich-text",
+      "blocks": {
+        "subheading_beh4zU": {
+          "type": "subheading",
+          "settings": {
+            "text": "Forradalmasítsd a rúzshasználat élményét!"
+          }
+        },
+        "heading_XjtBfc": {
+          "type": "heading",
+          "settings": {
+            "text": "Egész napos tartósság",
+            "heading_tag": "h2",
+            "text_color": "",
+            "gradient": ""
+          }
+        },
+        "richtext_6y8XLR": {
+          "type": "richtext",
+          "settings": {
+            "content": "<p><br\/>Szabadalmaztatott <strong>Liquid Blading<\/strong> technológiánk a pigmenteket az ajkak legfelső rétegébe juttatja, majd „lezárja”, így a szín órákon át nem fakul és nem adódik át.<br\/><br\/><\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "subheading_beh4zU",
+        "heading_XjtBfc",
+        "richtext_6y8XLR"
+      ],
+      "settings": {
+        "full_width": true,
+        "content_width": "small",
+        "text_position": "center",
+        "background": "",
+        "background_gradient": "",
+        "text_color": ""
+      }
+    },
+    "image-with-text-overlay": {
+      "type": "image-with-text-overlay",
+      "blocks": {
+        "1664424230c4756b0e-1": {
+          "type": "heading",
+          "settings": {
+            "text": "Az ajakápolás új generációja.",
+            "heading_tag": "h1"
+          }
+        },
+        "1664424230c4756b0e-2": {
+          "type": "richtext",
+          "settings": {
+            "content": "<p><strong>Miért marad így a helyén?<\/strong>A<strong>Liquid Blading<\/strong>technológia a pigmentet<strong>mikrovékony rétegként rögzíti<\/strong>az ajkak felső rétegéhez, és „lezárja”, ezért a szín<strong>nem adódik át, nem fakul<\/strong>, még evés-ivás után sem.<br\/><strong>Eredmény:<\/strong>tetoválás-hatás<strong>tű és fájdalom nélkül<\/strong>– percek alatt.<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "1664424230c4756b0e-1",
+        "1664424230c4756b0e-2"
+      ],
+      "settings": {
+        "full_width": true,
+        "allow_transparent_header": false,
+        "enable_parallax": false,
+        "image_size": "md",
+        "image": "shopify:\/\/shop_images\/beauty-natural-2-middle.jpg",
+        "mobile_text_position": "place-self-center text-center",
+        "desktop_text_position": "sm:place-self-center sm:text-center",
+        "text_color": "#ffffff",
+        "overlay_color": "#000000",
+        "overlay_opacity": 30
+      }
+    },
+    "press": {
+      "type": "press",
+      "blocks": {
+        "16644243327ba53d2a-0": {
+          "type": "quote",
+          "settings": {
+            "logo_width": 100,
+            "author": "Júlia*",
+            "content": "Eleinte szkeptikus voltam, de tényleg kitart egész nap. Reggel felkenem, és este még mindig hibátlanul néz ki. Ráadásul egyáltalán nem szárítja ki az ajkaimat.",
+            "show_rating": true,
+            "rating": 5
+          }
+        },
+        "16644243327ba53d2a-1": {
+          "type": "quote",
+          "settings": {
+            "logo_width": 100,
+            "author": "Kata*",
+            "content": "Pontosan ezt kerestem! Nálam egy rúzs sem maradt meg eddig, de ez tényleg nem jön le. Egy esküvőn viseltem, és hajnalig tökéletesen tartott.",
+            "show_rating": true,
+            "rating": 5
+          }
+        },
+        "quote_rtzh3B": {
+          "type": "quote",
+          "settings": {
+            "logo_width": 100,
+            "author": "Violett*",
+            "content": "Nagyon tetszenek a színek, egyszerre élénkek és természetesek. Az egyetlen apró hátrány, hogy pár percet várni kell, amíg megszárad, de megéri. Ajánlom!",
+            "show_rating": true,
+            "rating": 5
+          }
+        }
+      },
+      "block_order": [
+        "16644243327ba53d2a-0",
+        "16644243327ba53d2a-1",
+        "quote_rtzh3B"
+      ],
+      "settings": {
+        "full_width": true,
+        "content_size": "medium",
+        "background": "",
+        "background_gradient": "",
+        "text_color": "",
+        "heading_color": "",
+        "heading_gradient": "",
+        "logo_item_background": "",
+        "logo_item_border": ""
+      }
+    }
+  },
+  "order": [
+    "slideshow",
+    "scrolling-text",
+    "rich_text_xFGCyf",
+    "image-with-text-overlay",
+    "press"
+  ]
+}
